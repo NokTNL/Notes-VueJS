@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- v-if directive -->
+      <!-- Only render the element when "seen" in the app's data is true  -->
+      <span v-if="seen">Now you see me</span>
+
+      <!-- v-for directive -->
+      <!--  rendering an array of items -->
+      <ol>
+        <!-- every time the for-loop extracts one item and assigned to "todo"  -->
+        <!-- JS syntax uses "of" for arrays for-loop but "in" also works here -->
+        <li v-for="todo of todos">{{ todo.text }}</li>
+      </ol>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

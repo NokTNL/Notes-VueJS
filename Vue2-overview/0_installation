@@ -1,0 +1,15 @@
+1. CDN: Vue does not need libraries installation to work, just link to an online file in your HTML:
+   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> (for prototpye)
+   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script> (for production)
+
+2. Local installation: Using just Vue 2, without ANY additional libraries:
+
+- Create a new folder and run:
+
+  > npm install vue
+
+- create a bioler plate HTML with <div id="app"></div> in the body
+- link it to a "main.js" script
+
+3. Using an CLI for more presets: (not finished)
+   > npm i -g @vue/cli (need root permission?)

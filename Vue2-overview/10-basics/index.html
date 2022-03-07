@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <!--  import the Vue library -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  </head>
+  <body>
+    <!-- Text interpolation from Vue app -->
+    <!-- Use a DOUBLE curly bracket {{}} to extract property values from the Vue app -->
+    <!-- !!! The two {{ or }} must go together without spaces in between -->
+    <div id="app">{{ message }}</div>
+    <!-- !! Any data extracted from our Vue app is REACTIVE! If you change app.message in the browser's console, e.g. app.message = "I changed it!"
+    Vue will recognise that and change the displayed "message" for you as well. No DOM manipulation! -->
+
+    <!-- Attribute binding -->
+    <!-- attributes can also be set REACTIVE by prefixing "v-bind:" to your attribute: -->
+    <div id="app-2">
+      <span v-bind:title="message">
+        Hover your mouse over me for a few seconds to see my dynamically bound
+        title!
+      </span>
+    </div>
+    <!-- If we set app2.message to something else in the console, it will also react to the change -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
